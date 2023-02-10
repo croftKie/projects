@@ -41,6 +41,7 @@ ul li img {
 .hero>img {
   height: 300px;
   border-radius: 20px;
+  border: 5px solid black;
 }
 .buttons {
   display: flex;
