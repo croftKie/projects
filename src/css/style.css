@@ -26,7 +26,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  gap: 10px;
 }
 .heroContent ul {
   list-style: none;
@@ -82,11 +81,11 @@ ul li img {
   filter: saturate(0%);
 }
 
-.panel1 { background-image:url("../assets/lofi.png");}
-.panel2 { background-image:url("../assets/surf.png"); }
-.panel3 { background-image:url("../assets/lofi.png"); }
-.panel4 { background-image:url("../assets/lofi.png"); }
-.panel5 { background-image:url("../assets/lofi.png"); }
+.panel1 { background-image:url("../assets/lofi.jpg");}
+.panel2 { background-image:url("../assets/surf.jpg"); }
+.panel3 { background-image:url("../assets/lofi.jpg"); }
+.panel4 { background-image:url("../assets/lofi.jpg"); }
+.panel5 { background-image:url("../assets/lofi.jpg"); }
 
 .saturate{
   filter: saturate(100%);
