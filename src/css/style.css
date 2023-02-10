@@ -1,0 +1,127 @@
+body {
+  height: 100vh;
+  margin: 0;
+  font-family: 'Amatic SC', cursive;
+}
+.container {
+  height: 100%;
+  display: grid;
+  grid-template-rows: 3fr 5fr;
+}
+
+.hero {
+  grid-row: 1/2;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  font-size: 1.5rem;
+}
+.heroContent>* {
+  margin: 0;
+}
+.heroContent {
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 10px;
+}
+.heroContent ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li img {
+  height: 20px;
+  margin-right: 5px;
+}
+
+.hero>img {
+  height: 300px;
+  border-radius: 20px;
+}
+.buttons {
+  display: flex;
+  gap: 20px;
+}
+.buttons a img {
+  height: 40px;
+}
+
+
+
+
+.panels {
+  overflow: hidden;
+  display:flex;
+  border: 5px solid black;
+  gap: 20px;
+}
+
+.panel {
+  color: white;
+  text-align: center;
+  align-items: center;
+  transition:
+    font-size 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
+    flex 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
+    background 0.2s,
+    opacity 0.5s,
+    filter 0.4s;
+  font-size: 3rem;
+  background-size: cover;
+  background-position: center;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  filter: saturate(0%);
+}
+
+.panel1 { background-image:url("../assets/lofi.png");}
+.panel2 { background-image:url("../assets/surf.png"); }
+.panel3 { background-image:url("../assets/lofi.png"); }
+.panel4 { background-image:url("../assets/lofi.png"); }
+.panel5 { background-image:url("../assets/lofi.png"); }
+
+.saturate{
+  filter: saturate(100%);
+}
+
+.panel:hover {
+  opacity: 100%;
+  filter: saturate(1);
+}
+
+.panel p {
+  text-transform: uppercase;
+  color: white;
+  margin: 0;
+  background-color: rgba(0, 0, 0);
+  width: 100%;
+}
+
+a{
+  color: aliceblue;
+}
+
+.panel a img {
+  height: 80px;
+  filter: invert(100%);
+}
+.panel a img:hover {
+  transform: scale(110%);
+  transform: rotateZ(22deg);
+}
+
+.linkUnClickable {
+  pointer-events: none;
+  
+}
+
+.panel.open {
+  flex: 5;
+}
