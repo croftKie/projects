@@ -5,13 +5,6 @@ function toggleOpen(){
   this.classList.toggle('open');
 }
 
-function toggleActive(e){
-  if (e.propertyName.includes('flex')) {
-    this.classList.toggle('open-active');
-    this.children[1].children[0].classList.toggle('linkUnClickable')
-  }
-}
-
 function mouseEnterSaturate(e){
     if (e.classList.includes('saturate')) {
         this.classList.remove('saturate');

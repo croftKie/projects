@@ -1,28 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree&display=swap');
+
 body {
   height: 100vh;
   margin: 0;
-  font-family: 'Amatic SC', cursive;
+  font-family: 'Figtree', sans-serif;
 }
 .container {
   height: 100%;
   display: grid;
-  grid-template-rows: 3fr 5fr;
+  grid-template-rows: 40px 4fr 6fr;
+}
+
+.nav {
+  display: flex;
+  justify-content: end;
+  margin-right: 50px;
+  margin-top: 10px;
+  gap: 30px;
+}
+
+.nav img {
+  height: 30px;
+}
+
+.nav img:hover {
+  transform: scale(110%);
+  transform: rotateZ(22deg);
 }
 
 .hero {
-  grid-row: 1/2;
+  grid-row: 2/3;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 50px;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 .heroContent>* {
   margin: 0;
 }
 .heroContent {
-  height: 80%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -40,7 +61,7 @@ ul li img {
 .hero>img {
   height: 300px;
   border-radius: 20px;
-  border: 5px solid black;
+  border: 5px solid rgb(22, 22, 22);
 }
 .buttons {
   display: flex;
@@ -56,7 +77,7 @@ ul li img {
 .panels {
   overflow: hidden;
   display:flex;
-  border: 5px solid black;
+  border-top: 5px solid rgb(22, 22, 22);
   gap: 20px;
 }
 
@@ -70,7 +91,7 @@ ul li img {
     background 0.2s,
     opacity 0.5s,
     filter 0.4s;
-  font-size: 3rem;
+  font-size: 2rem;
   background-size: cover;
   background-position: center;
   flex: 1;
@@ -100,26 +121,27 @@ ul li img {
   text-transform: uppercase;
   color: white;
   margin: 0;
-  background-color: rgba(0, 0, 0);
+  background-color: rgb(22, 22, 22);
   width: 100%;
+  padding: 10px 0 10px 0;
 }
 
 a{
-  color: aliceblue;
+  color: white;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+  transform:scale(90%);
 }
 
 .panel a img {
-  height: 80px;
+  height: 40px;
   filter: invert(100%);
 }
 .panel a img:hover {
   transform: scale(110%);
   transform: rotateZ(22deg);
-}
-
-.linkUnClickable {
-  pointer-events: none;
-  
 }
 
 .panel.open {
